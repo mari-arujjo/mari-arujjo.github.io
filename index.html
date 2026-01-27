@@ -1,80 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariana Araujo | Portfólio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Araújo Silva | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="container">
-    <h1>Mariana Araujo</h1>
-    <p class="subtitle">
-      Desenvolvedora • Flutter • ASP.NET • Aplicações Educacionais
-    </p>
+    <header>
+        <nav>
+            <div class="logo">M.ARAÚJO</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#skills">Stack</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contacto">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="links">
-      <a href="https://github.com/mari-arujjo" target="_blank">GitHub</a>
-      <!-- adiciona LinkedIn quando quiser -->
-      <!-- <a href="https://linkedin.com/in/teu-link" target="_blank">LinkedIn</a> -->
-    </div>
-  </header>
-
-  <main class="container">
-
-    <section>
-      <h2>Sobre</h2>
-      <p>
-        Sou desenvolvedora com foco em aplicações educacionais e inclusivas,
-        atuando principalmente com Flutter e ASP.NET. Tenho experiência com
-        projetos voltados à Libras, acessibilidade e sistemas completos
-        envolvendo frontend, backend e banco de dados.
-      </p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-intro">Olá, eu sou</p>
+            <h1>Mariana Araújo</h1>
+            <p class="hero-description">Desenvolvedora Full-Stack</p>
+            
+            <div class="hero-contact-style">
+                <a href="https://github.com/mari-arujjo" target="_blank" class="contact-item">
+                    <div class="icon"><i class="fa-brands fa-github"></i></div>
+                    <p>GitHub</p>
+                </a>
+                <a href="Currículo - Mariana Araújo Silva.pdf" target="_blank" class="contact-item">
+                    <div class="icon"><i class="fa-solid fa-file-invoice"></i></div>
+                    <p>Imprimir CV</p>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>Projetos</h2>
+    <section id="educacao" class="education">
+        <h2 class="section-title">Educação</h2>
+        <div class="timeline">
+            <div class="edu-item">
+                <span class="year">2024 - 2027</span>
+                <h3>Tecnologia em Sistemas para Internet</h3>
+                <p>IFRN Campus Natal-Zona Leste</p>
+            </div>
+            <div class="edu-item">
+                <span class="year">2021 - 2023</span>
+                <h3>Ensino Médio Técnico em Informática</h3>
+                <p>CEEP Professora Lourdinha Guerra</p>
+            </div>
+        </div>
 
-      <div class="project">
-        <h3>App Educacional de Libras</h3>
-        <p>
-          Aplicativo voltado para professores e alunos de Libras, com aulas,
-          vídeos, exercícios e gerenciamento de usuários.
-        </p>
-        <a href="https://github.com/mari-arujjo/NOME-DO-REPO" target="_blank">
-          Ver no GitHub →
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>Outro Projeto</h3>
-        <p>
-          Breve descrição do projeto, tecnologias usadas e objetivo.
-        </p>
-        <a href="#" target="_blank">Ver no GitHub →</a>
-      </div>
-
+        <div class="extra-courses">
+            <h3 class="extra-title">Cursos Complementares</h3>
+            <div class="extra-grid">
+                <div class="extra-item">
+                    <span class="extra-year">2026</span>
+                    <p><strong>FIC em Introdução à Programação em Java</strong> -  IFRN Campus Natal-Zona Leste</p>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-year">2026</span>
+                    <p><strong>Programação .Net: avançado</strong> - IFRN Campus Formiga</p>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-year">2024 - 2025</span>
+                    <p><strong>FIC + em Sistemas Embarcados</strong> - IFRN Campus Natal-Zona Leste</p>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-year">2024</span>
+                    <p><strong>Technical Support Fundamentals</strong> - Google in Coursera</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>Tecnologias</h2>
-      <ul class="techs">
-        <li>Flutter</li>
-        <li>Dart</li>
-        <li>ASP.NET Core</li>
-        <li>C#</li>
-        <li>PostgreSQL</li>
-        <li>Git & GitHub</li>
-      </ul>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Minha Stack</h2>
+        <div class="skills-container">
+            <span class="skill-tag">.NET / C#</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Flutter / Dart</span>
+            <span class="skill-tag">CSS / React/ JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+        </div>
     </section>
 
-  </main>
+    <section id="projetos" class="projects">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img">
+                    <img src="diversidade.jpg" alt="Plataforma Educacional Inclusiva">
+                </div>
+                <div class="card-body">
+                    <h3>Plataforma Educacional Inclusiva</h3>
+                    <p>(Flutter, ASP.NET Core, PostgreSQL)</p>
+                    <p>Sistema desenvolvido em parceria entre IFRN e CAS Natal para apoiar professores no ensino de Língua Portuguesa para alunos surdos da rede pública, desenvolvido como projeto para o IFRN.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="hardware.webp" alt="Marketplace de Jogos">
+                </div>
+                <div class="card-body">
+                    <h3>E-Play</h3>
+                    <p>(React, Next.js, Node.js, PostgreSQL)</p>
+                    <p>Marketplace especializado em itens gamers, focado na compra e venda de consoles, jogos e cartuchos (mídias físicas), desenvolvido como projeto para o IFRN.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer class="container footer">
-    <p>© 2026 • Mariana Araujo</p>
-  </footer>
+    <section id="contacto" class="contact">
+        <h2 class="section-title">Fale Comigo!</h2>
+        
+        <div class="contact-grid">
+            <a href="mailto:araujosl.mariana@gmail.com" class="contact-item">
+                <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                <p>Email</p>
+            </a>
+            <a href="https://wa.me/5584988594714" target="_blank" class="contact-item">
+                <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <p>WhatsApp</p>
+            </a>
+        </div>
+    </section>
 
+    <footer>
+        <p>&copy; 2026 Mariana Araújo Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll("nav ul li a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLi.forEach((a) => {
+                a.classList.remove("active");
+                if (a.getAttribute("href").includes(current)) {
+                    a.classList.add("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-S
