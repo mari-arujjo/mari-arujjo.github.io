@@ -153,6 +153,40 @@ nav ul li a.active, nav ul li a:hover {
     color: #55768C;
 }
 
+/* --- SOBRE MIM --- */
+.about {
+    padding: 100px 8%;
+    background: #faf9f8;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #B83556; /* Detalhe com a cor de destaque que você já usa */
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
 /* --- EDUCAÇÃO --- */
 .education {
     padding: 120px 8%;
@@ -389,8 +423,95 @@ footer {
     color: #845747;
 }
 
+/* --- MODAL --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #845747;
+}
+
+.modal-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.modal-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #55768C;
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.modal-btn:hover {
+    background: #B83556;
+}
+
 @media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text .section-title::after {
+        margin: 15px auto;
+    }
+
     nav ul { display: none; }
     .hero-content h1 { font-size: 2.5rem; }
     .timeline { padding-left: 30px; }
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+        padding: 25px;
+    }
+
+    .modal-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-btn {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
 }
