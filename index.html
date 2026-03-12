@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="pc.png">
+    <link rel="icon" type="image/x-icon" href="assets/pc.png">
 </head>
 <body>
 
@@ -18,8 +18,8 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#educacao">Educação</a></li>
-                <li><a href="#stack">Skills</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#stack">Skills</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -29,7 +29,7 @@
         <div class="hero-content">
             <p class="hero-intro">Olá, eu sou</p>
             <h1>Mariana Araújo</h1>
-            <p class="hero-description">Desenvolvedora Full-Stack</p>
+            <p class="hero-description">Desenvolvedora de Software</p>
             
             <div class="hero-contact-style">
                 <a href="https://github.com/mari-arujjo" target="_blank" class="contact-item">
@@ -40,7 +40,7 @@
                     <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
                     <p>Linkedin</p>
                 </a>
-                <a href="Curriculo_Mariana.pdf" target="_blank" class="contact-item">
+                <a href="assets/Curriculo_Mariana.pdf" target="_blank" class="contact-item">
                     <div class="icon"><i class="fa-solid fa-file-invoice"></i></div>
                     <p>Imprimir CV</p>
                 </a>
@@ -51,19 +51,17 @@
     <section id="sobre" class="about">
         <div class="about-container">
             <div class="about-img">
-                <img src="eu.jpeg" alt="Mariana Araújo">
+                <img src="assets/eu.jpeg" alt="Mariana Araújo">
             </div>
             <div class="about-text">
                 <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Sobre Mim</h2>
                 <p>
                     Sou estudante de <strong>Sistemas para Internet</strong> no IFRN e <strong>Técnica em Informática</strong>, mas, acima de tudo, 
-                    sou alguém apaixonada por construir pontes digitais. Acredito que a tecnologia só cumpre seu papel quando gera impacto social e
-                    promove a acessibilidade, transformando linhas de código em soluções que facilitam a vida das pessoas.
+                    sou alguém apaixonada por construir pontes digitais.
                 </p>
                 <p>
                     Fora do ambiente de desenvolvimento, busco inspiração na arte e no entretenimento. Sou fã de <strong>RPG, animes e jogos</strong>, 
-                    e nas horas vagas gosto de explorar meu lado criativo <strong>cantando e desenhando</strong>. Acredito que essa veia artística 
-                    me ajuda a ter um olhar mais refinado para o design e a experiência do usuário.
+                    e nas horas vagas gosto de explorar meu lado criativo <strong>cantando e desenhando</strong>.
                 </p>
             </div>
         </div>
@@ -84,31 +82,13 @@
             </div>
         </div>
     </section>
-
-    <section id="stack" class="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <span class="skill-tag">Flutter / Dart</span>
-            <span class="skill-tag">.NET / C#</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">CSS / Reactb/ JavaScript</span>
-            <span class="skill-tag">Render</span>
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Neon Database</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Git / GitHub</span>
-            <span class="skill-tag">GameMaker</span>
-        </div>
-    </section>
-
+    
     <section id="projetos" class="projects">
         <h2 class="section-title">Meus Projetos</h2>
         <div class="grid">
             <div class="card" onclick="openProject('inclusiva')" style="cursor: pointer;">
                 <div class="card-img">
-                    <img src="diversidade.jpg" alt="Plataforma Educacional Inclusiva">
+                    <img src="assets/diversidade.jpg" alt="Plataforma Educacional Inclusiva">
                 </div>
                 <div class="card-body">
                     <h3>Plataforma Educacional Inclusiva</h3>
@@ -118,13 +98,72 @@
             </div>
             <div class="card" onclick="openProject('beaba')" style="cursor: pointer;">
                 <div class="card-img">
-                    <img src="alfabetizacao.jpeg" alt="Jogo Bê A Bá"> </div>
+                    <img src="assets/alfabetizacao.jpeg" alt="Jogo Bê A Bá"> </div>
                 <div class="card-body">
                     <h3>Jogo Educacional para Alfabetização</h3>
                     <p>(GameMaker Studio)</p>
                     <p>Clique para ver detalhes e repositório.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="stack" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-code"></i> Linguagens</h3>
+                <div class="tags">
+                    <span class="skill-tag">.NET / C#</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+                <div class="tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-database"></i> Bancos e Servidores</h3>
+                <div class="tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Neon</span>
+                    <span class="skill-tag">Supabase</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas e DevOps</h3>
+                <div class="tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Render</span>
+                    <span class="skill-tag">Cloudflare</span>
+                    <span class="skill-tag">Vercel</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-star"></i> Outros</h3>
+                <div class="tags">
+                    <span class="skill-tag">Desenvolvimento de Jogos</span>
+                    <span class="skill-tag">Proatividade</span>
+                    <span class="skill-tag">Resolução de Problemas</span>
+                    <span class="skill-tag">GameMaker</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -163,7 +202,7 @@
             let current = "";
             sections.forEach((section) => {
                 const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 150) {
+                if (window.pageYOffset >= sectionTop - 150) {
                     current = section.getAttribute("id");
                 }
             });
