@@ -18,7 +18,7 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#educacao">Educação</a></li>
-                <li><a href="#stack">Stack</a></li>
+                <li><a href="#stack">Skills</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -36,7 +36,11 @@
                     <div class="icon"><i class="fa-brands fa-github"></i></div>
                     <p>GitHub</p>
                 </a>
-                <a href="Currículo - Mariana Araújo Silva.pdf" target="_blank" class="contact-item">
+                <a href="https://www.linkedin.com/in/mariana-ara%C3%BAjo-8591742b3/" target="_blank" class="contact-item">
+                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <p>Linkedin</p>
+                </a>
+                <a href="Curriculo_Mariana.pdf" target="_blank" class="contact-item">
                     <div class="icon"><i class="fa-solid fa-file-invoice"></i></div>
                     <p>Imprimir CV</p>
                 </a>
@@ -79,32 +83,10 @@
                 <p>CEEP Professora Lourdinha Guerra</p>
             </div>
         </div>
-
-        <div class="extra-courses">
-            <h3 class="extra-title">Cursos Complementares</h3>
-            <div class="extra-grid">
-                <div class="extra-item">
-                    <span class="extra-year">2026</span>
-                    <p><strong>FIC em Introdução à Programação em Java</strong> - IFRN Campus Natal-Zona Leste</p>
-                </div>
-                <div class="extra-item">
-                    <span class="extra-year">2026</span>
-                    <p><strong>Programação .Net: avançado</strong> - IFRN Campus Formiga</p>
-                </div>
-                <div class="extra-item">
-                    <span class="extra-year">2024 - 2025</span>
-                    <p><strong>FIC + em Sistemas Embarcados</strong> - IFRN Campus Natal-Zona Leste</p>
-                </div>
-                <div class="extra-item">
-                    <span class="extra-year">2024</span>
-                    <p><strong>Technical Support Fundamentals</strong> - Google in Coursera</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section id="stack" class="skills">
-        <h2 class="section-title">Minha Stack</h2>
+        <h2 class="section-title">Skills</h2>
         <div class="skills-container">
             <span class="skill-tag">Flutter / Dart</span>
             <span class="skill-tag">.NET / C#</span>
@@ -134,16 +116,6 @@
                     <p>Clique para ver detalhes e repositórios.</p>
                 </div>
             </div>
-            <div class="card" onclick="openProject('eplay')" style="cursor: pointer;">
-                <div class="card-img">
-                    <img src="hardware.webp" alt="Marketplace de Jogos">
-                </div>
-                <div class="card-body">
-                    <h3>Plataforma Marketplace</h3>
-                    <p>(React, Next.js, Node.js, PostgreSQL)</p>
-                    <p>Clique para ver detalhes e repositório.</p>
-                </div>
-            </div>
             <div class="card" onclick="openProject('beaba')" style="cursor: pointer;">
                 <div class="card-img">
                     <img src="alfabetizacao.jpeg" alt="Jogo Bê A Bá"> </div>
@@ -171,7 +143,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Mariana Araújo Silva. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Mariana Araújo. Todos os direitos reservados.</p>
     </footer>
 
     <div id="project-modal" class="modal">
@@ -209,25 +181,17 @@
 
         const projectData = {
             "inclusiva": {
-                title: "CAS Natal - Cursos",
-                desc: "Sistema desenvolvido em parceria entre IFRN e CAS Natal para apoiar professores no ensino de Língua Portuguesa para alunos surdos.",
+                title: "CAS Educa",
+                desc: "EdTech SaaS desenvolvido em parceria entre IFRN e CAS Natal para apoiar professores no ensino de Língua Portuguesa para alunos surdos.",
                 links: [
-                    { name: "Front-end (Flutter)", url: "https://github.com/mari-arujjo/CAS-Natal-App" },
-                    { name: "Back-end (.NET)", url: "https://github.com/mari-arujjo/CAS-Natal-Api" }
-                ]
-            },
-            "eplay": {
-                title: "E-Play",
-                desc: "Marketplace especializado em itens gamers (consoles, mídias físicas e acessórios), focado na compra e venda de itens usados, desenvolvido como projeto para o IFRN em grupo.",
-                links: [
-                    { name: "Ver Repositório", url: "https://github.com/ThalysRD/e-play" }
+                    { name: "Acesse o CAS Educa!", url: "https://portalcaseduca.com.br/" }
                 ]
             },
             "beaba": {
                 title: "Bê A Bá",
                 desc: "Bê A Bá é um jogo educativo voltado para auxiliar na alfabetização de crianças de 6 a 10 anos, desenvolvido como Trabalho de Conclusão de Curso (TCC) em grupo.",
                 links: [
-                    { name: "Ver Repositório", url: "https://github.com/mari-arujjo/Be-A-Ba" }
+                    { name: "Jogue o Bê A Bá!", url: "https://downloadbeaba.carrd.co/" }
                 ]
             }
         };
