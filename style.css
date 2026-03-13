@@ -428,7 +428,7 @@ footer {
     }
 
     nav ul { 
-        display: none; /* Esconde menu em telas pequenas */
+        display: none;
     }
 
     .hero-content h1 { 
@@ -450,7 +450,7 @@ footer {
     }
 
     .about-img img {
-        box-shadow: 10px 10px 0px #B83556; /* Sombra menor para não vazar da tela */
+        box-shadow: 10px 10px 0px #B83556;
     }
 
     .about-text .section-title::after {
