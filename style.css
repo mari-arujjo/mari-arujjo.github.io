@@ -421,6 +421,61 @@ footer {
     animation: fadeIn 0.3s ease;
 }
 
+/* --- ESTILOS ADICIONADOS DO MODAL --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #B83556;
+}
+
+#modal-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#modal-description {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.modal-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #55768C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.modal-btn:hover {
+    background-color: #B83556;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* --- MEDIA QUERIES (RESPONSIVIDADE) --- */
 @media (max-width: 768px) {
     header {
